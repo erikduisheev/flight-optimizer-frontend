@@ -1,0 +1,21 @@
+.flights-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin: 10em 20em 10em 20em;
+  justify-content: center;
+}
+
+.flights-container > .departures {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.flights-container > .destinations {
+  flex: 1;
+  margin-left: 1em;
+}
+
+.-margin-bottom-10 {
+  margin-bottom: 10px;
+}
