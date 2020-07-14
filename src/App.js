@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="Section">
       <h1 className="Headers">Get the price per kilometer.</h1>
-      <h2 className="Headers">Travel wisely!</h2>
+      <h1 className="Headers">Travel wisely!</h1>
       <Flights />
       <ToastContainer />
     </div>
