@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 10em 15em 10em 15em;
+  margin: 2em 13em 10em 13em;
   justify-content: center;
 }
 
@@ -57,4 +57,6 @@
   border: 1px solid #e2e2e2;
   margin-bottom: 1em;
   border-radius: 4px;
+  background-color: white;
+  border-color: skyblue;
 }

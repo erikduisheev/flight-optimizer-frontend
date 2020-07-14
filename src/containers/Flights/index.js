@@ -38,7 +38,7 @@ const Flights = () => {
       <div className="search">
         <div className="flights-container-departures">
           <AsyncSelectField
-            label="Departure"
+            label="Departure:"
             placeholder="Choose the departure"
             isMulti={false}
             loadAsyncConfig={{
@@ -52,7 +52,7 @@ const Flights = () => {
         </div>
         <div className="flights-container-destinations">
           <AsyncSelectField
-            label="Destinations"
+            label="Destinations:"
             placeholder="Choose your destinations"
             isMulti
             value={destinations}

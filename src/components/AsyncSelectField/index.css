@@ -10,13 +10,13 @@
   padding-left: 0.8em;
   font-size: 1em;
   font-weight: 300;
-  /* color: "#9b9b9b"; */
-  /* border: 1px solid "#FFFFFF"; */
 }
 
 .input-field-item-label {
   display: flex;
-  color: "#606060";
-  font-weight: 500;
+  color: white;
+  font-weight: 1000;
   margin-bottom: 0.8em;
+  -webkit-text-stroke-color: skyblue;
+  -webkit-text-stroke-width: 0.5px;
 }

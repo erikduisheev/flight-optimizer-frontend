@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.Headers {
+  /* color: white; */
+  color: #606060;
+  -webkit-text-stroke-color: skyblue;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.Section {
+  min-height: 100vh;
+  background-image: url("./image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: "hidden";
+  text-align: center;
+}
