@@ -47,7 +47,7 @@ const Flights = () => {
             }}
             value={departure}
             onChange={setDeparture}
-            noOptionsMessage="No city found"
+            noOptionsMessage="We couldn't find a location that matched your input. Why not try again?"
           />
         </div>
         <div className="flights-container-destinations">
@@ -60,7 +60,7 @@ const Flights = () => {
               minInputCharLengthToStart: 2,
               endpoint: "locations",
             }}
-            noOptionsMessage="No city found"
+            noOptionsMessage="We couldn't find a location that matched your input. Why not try again?"
             onChange={(value) => setDestinations(value || [])}
           />
         </div>
