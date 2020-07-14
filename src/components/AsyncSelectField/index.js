@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./index.css";
 import AsyncSelect from "react-select/async";
+import MakeAnimated from "react-select/animated";
 import api from "../../api";
 import { toast } from "react-toastify";
 
@@ -54,6 +55,7 @@ const AsyncSelectField = ({
         </label>
       )}
       <AsyncSelect
+        components={MakeAnimated()}
         value={value}
         placeholder={placeholder}
         noOptionsMessage={noInputMessage}
