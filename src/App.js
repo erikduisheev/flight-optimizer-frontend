@@ -7,6 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
+      <h1>Get the price per kilometer. </h1>
+      <h2>Travel wisely!</h2>
       <Flights />
       <ToastContainer />
     </div>

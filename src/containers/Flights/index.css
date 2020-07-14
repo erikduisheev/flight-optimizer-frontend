@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 10em 20em 10em 20em;
+  margin: 10em 15em 10em 15em;
   justify-content: center;
 }
 
@@ -10,6 +10,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .flights-container-departures {
@@ -35,8 +36,8 @@
 .button {
   display: flex;
   margin-left: 2em;
+  margin-top: 2em;
   height: 40px;
-  align-self: flex-end;
   width: 120px;
 }
 

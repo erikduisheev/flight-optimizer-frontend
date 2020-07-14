@@ -4,6 +4,8 @@ import "./index.css";
 import Button from "@n3/react-button";
 import api from "../../api";
 import { toast } from "react-toastify";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 const Flights = () => {
   const [departure, setDeparture] = useState("");
@@ -15,6 +17,7 @@ const Flights = () => {
   };
   const handleOnClickFindRoutes = () => {
     setIsLoading(true);
+    setFlights([]);
     api
       .get(
         `/flights?from=${departure.value}${destinations
@@ -71,19 +74,23 @@ const Flights = () => {
         </Button>
       </div>
       <div className="flights-list">
+        {isLoading && (
+          <Loader type="Rings" color="#00BFFF" height={80} width={80} />
+        )}
+
         {flights.map((flight) => {
           return (
             <div className="flights-list-item">
               {flight.is_reachable && (
                 <>
                   <p
-                    style={{ margin: 0 }}
+                    style={{ margin: 0, textAlign: "left" }}
                   >{`To ${flight.city}, airport - ${flight.airport}, distance - ${flight.distance} km, price - $${flight.price}`}</p>
                   <p style={{ margin: 0 }}>{flight.price_per_km} $/km</p>
                 </>
               )}
               {!flight.is_reachable && (
-                <p style={{ margin: 0 }}>
+                <p style={{ margin: 0, textAlign: "left" }}>
                   Currently, there is no any flights to {flight.city}
                 </p>
               )}
