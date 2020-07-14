@@ -1,0 +1,22 @@
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-field-container > .input-field {
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 0.8em;
+  font-size: 1em;
+  font-weight: 300;
+  /* color: "#9b9b9b"; */
+  /* border: 1px solid "#FFFFFF"; */
+}
+
+.input-field-item-label {
+  display: flex;
+  color: "#606060";
+  font-weight: 500;
+  margin-bottom: 0.8em;
+}
