@@ -1,6 +1,7 @@
 .input-field-container {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .input-field-container > .input-field {

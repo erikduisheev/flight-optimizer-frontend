@@ -1,21 +1,59 @@
 .flights-container {
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10em 20em 10em 20em;
   justify-content: center;
 }
 
-.flights-container > .departures {
+.flights-container > .search {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.flights-container-departures {
+  display: flex;
   flex: 1;
   margin-right: 1em;
 }
 
-.flights-container > .destinations {
+.flights-container-destinations {
+  display: flex;
   flex: 1;
   margin-left: 1em;
 }
 
+.-flex-1 {
+  display: flex;
+  flex: 1;
+}
 .-margin-bottom-10 {
   margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  margin-left: 2em;
+  height: 40px;
+  align-self: flex-end;
+  width: 120px;
+}
+
+.flights-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 2em;
+}
+
+.flights-list-item {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 1em;
+  border-radius: 4px;
 }

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./index.css";
 import AsyncSelect from "react-select/async";
 import api from "../../api";
+import { toast } from "react-toastify";
 
 const AsyncSelectField = ({
   name,
@@ -15,12 +16,15 @@ const AsyncSelectField = ({
   isMulti = false,
   loadAsyncConfig,
   value = null,
+  noOptionsMessage = "",
 }) => {
+  const [foundOptions, setFoundOptions] = useState(true);
   const fetchOptions = (inputValue, callback) => {
     api
       .get(`${loadAsyncConfig.endpoint}?city=${inputValue}`)
       .then((response) => {
         const { possible_cities: possibleCities } = response.data;
+        setFoundOptions(!!possibleCities.length);
         callback(
           possibleCities.map((city) => ({
             label: `${city.city}, ${city.country}`,
@@ -29,13 +33,18 @@ const AsyncSelectField = ({
         );
       })
       .catch((error) => {
-        console.log("error", error.message);
+        toast.error(`Something went wrong ${error.message}`);
       });
   };
   const loadAsyncOptions = (inputValue, callback) => {
     if (inputValue.length >= loadAsyncConfig.minInputCharLengthToStart) {
       fetchOptions(inputValue, callback);
+      return;
     }
+    setFoundOptions(true);
+  };
+  const noInputMessage = () => {
+    return <span>{foundOptions ? "No options" : noOptionsMessage}</span>;
   };
   return (
     <div className={`input-field-container ${containerClassName}`}>
@@ -47,6 +56,7 @@ const AsyncSelectField = ({
       <AsyncSelect
         value={value}
         placeholder={placeholder}
+        noOptionsMessage={noInputMessage}
         isClearable={isClearable}
         isDisabled={disabled}
         onChange={onChange}
