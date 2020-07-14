@@ -45,7 +45,10 @@ const AsyncSelectField = ({
     setFoundOptions(true);
   };
   const noInputMessage = () => {
-    return <span>{foundOptions ? "No options" : noOptionsMessage}</span>;
+    if (foundOptions) {
+      return <span>No options</span>;
+    }
+    return <span style={{ color: "red" }}>{noOptionsMessage}</span>;
   };
   return (
     <div className={`input-field-container ${containerClassName}`}>
