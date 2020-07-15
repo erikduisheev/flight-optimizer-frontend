@@ -6,29 +6,33 @@
 
 ### Information about client-side
 
-This is the front-end side of `Flight-optimizer` project.
+This is the front-end side of `Flight-Optimizer` project.
 
-Front-end is deployed to the AWS Amplify services: https://deployment.dkbw81rcej2op.amplifyapp.com/ from the `deployment` branch. If you want to run the project locally, then clone it and run from `master` branch.
+Front-end is deployed to the **AWS Amplify services**: https://deployment.dkbw81rcej2op.amplifyapp.com/
+
+CD pipelines run from the `deployment` branch. If you want to run the project locally, then clone it and run from `master` branch.
+
+CI / CD is managed by **AWS Amplify Console Web Preview** application, which is installed to this repository. In order to deploy to AWS Amplify create pull request to `deployment` branch. AWS Amplify Console Web Preview will run CI pipelines. If CI pipelines were passed, merge pull request and AWS Amplify Console Web Preview will run CD automatically and deploy to AWS Amplify services.
 
 ### Information about server-side
 
-Server side is deployed to Heroku services: https://flight-optimizer-server.herokuapp.com/
+Django Server is deployed to **Heroku services**: https://flight-optimizer-server.herokuapp.com/
 
-The source code of the server is here: https://github.com/erikduisheev/flight-optimizer-server
+The source code of the server is [here](https://github.com/erikduisheev/flight-optimizer-server).
 
-Build status of the server can be found [here](https://github.com/erikduisheev/flight-optimizer-server/actions) .
+Build status of the server can be found [here](https://github.com/erikduisheev/flight-optimizer-server/actions).
 
 ### Information about CLI
 
-Python package that provides CLI for searching these specific flights is published on PYPI: https://pypi.org/project/flight-optimizer/
+Python package that provides CLI for searching these specific flights is published on **PYPI**: https://pypi.org/project/flight-optimizer/.
 
-The source code of CLI package can be found here: https://github.com/erikduisheev/flight-optimizer
+The source code of CLI package can be found [here](https://github.com/erikduisheev/flight-optimizer).
 
-Build status of CLI package is [here](https://github.com/erikduisheev/flight-optimizer/actions) .
+Build status of CLI package is [here](https://github.com/erikduisheev/flight-optimizer/actions).
 
 ### Credits
 
-`Flight-Optimizer` was developed by motivation from [B12 Team](https://www.b12.io/about)
+Inspired by [B12 Team](https://www.b12.io/about)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
