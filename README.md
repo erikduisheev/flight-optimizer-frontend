@@ -6,15 +6,19 @@ Flight-Optimizer is a service that searches for the cheapest flights based on pr
 
 This is the front-end side of flight-optimizer project.
 
-Front-end is deployed to the AWS Amplify services: https://deployment.dkbw81rcej2op.amplifyapp.com/
+Front-end is deployed to the AWS Amplify services: https://deployment.dkbw81rcej2op.amplifyapp.com/ from the beanch `deployment`. If you want to run the project locally, then clone it from `master` branch.
 
 Server side is deployed to Heroku services: https://flight-optimizer-server.herokuapp.com/
 
 The source code of the server is here: https://github.com/erikduisheev/flight-optimizer-server
 
+Build status of the server can be found [here](https://github.com/erikduisheev/flight-optimizer-server/actions) .
+
 Python package that provides CLI for searching these specific flights is published on PYPI: https://pypi.org/project/flight-optimizer/
 
-The source code of package (CLI) can be found here: https://github.com/erikduisheev/flight-optimizer
+The source code of CLI package can be found here: https://github.com/erikduisheev/flight-optimizer
+
+Build status of CLI package is [here](https://github.com/erikduisheev/flight-optimizer/actions) .
 
 Flight-Optimizer was developed by motivation from [B12 Team](https://www.b12.io/about)
 
