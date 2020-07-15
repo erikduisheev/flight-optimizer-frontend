@@ -1,3 +1,23 @@
+#Flight-Optimizer-Frontend
+
+## About the project
+
+Flight-Optimizer is a service that searches for the cheapest flights based on price per kilometer criteria.
+
+This is the front-end side of flight-optimizer project.
+
+Front-end is deployed to the AWS Amplify services: https://deployment.dkbw81rcej2op.amplifyapp.com/
+
+Server side is deployed to Heroku services: https://flight-optimizer-server.herokuapp.com/
+
+The source code of the server is here: https://github.com/erikduisheev/flight-optimizer-server
+
+Python package that provides CLI for searching these specific flights is published on PYPI: https://pypi.org/project/flight-optimizer/
+
+The source code of package (CLI) can be found here: https://github.com/erikduisheev/flight-optimizer
+
+Flight-Optimizer was developed by motivation from [B12 Team](https://www.b12.io/about)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
